@@ -32,13 +32,13 @@ jobs:
 
     - name: Set git config
       run : |
-        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --global user.email "41898282+github-actions[bot]@user.snoreply.github.com"
         git config --global user.name "github-actions[bot]"
         git config --global pull.rebase false
         git config --global --list
 
     - name: Load upstream commits
-      run: git pull https://github.com/coolsnowwolf/lede.git --log --no-commit
+      run: git pull https://github.com/uclee888/20220429-lean.git --log --no-commit
 
     - name: Apply commit changes
       run: |
